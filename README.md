@@ -17,6 +17,12 @@ In WebAssembly environment, it can be used for application development using gly
 
 ## Release Notes
 
+### 2.0
+
+- Update library to .NET Core 9
+- Removed Brotli nuget dependency
+- Invariant Culture for library independence
+
 ### 1.2
 
 - Add typeface properties: Copyrights, Descriptions, DesignerNames, DesignerUrls, FaceNames, FamilyNames, LicenseDescriptions, ManufacturerNames, SampleTexts, Trademarks,  VendorUrls, VersionStrings, Win32FaceNames, and Win32FamilyNames
