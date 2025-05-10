@@ -2,7 +2,7 @@
 GlyphLoader is a .NET Core library for TrueType, OpenType font.  
 It is written in C#, designed to be small, efficient and portable while capable of producing high-quality glyph images.  
 In WebAssembly environment, it can be used for application development using glyph outline information. 
-Old original .NET Standart library is placed in  ![https://github.com/watertrans/GlyphLoader](https://github.com/watertrans/GlyphLoader)
+Old original .NET Standart library is placed in  !(https://github.com/watertrans/GlyphLoader)
 
 ## Features
 
