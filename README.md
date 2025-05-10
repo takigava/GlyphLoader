@@ -13,9 +13,9 @@ Old original .NET Standart library is placed in https://github.com/watertrans/Gl
 
 ## Demo
 
-![AjaxDemo](./docs/img/demo/ajaxrendering.gif)
+![AjaxDemo](https://github.com/takigava/GlyphLoader/blob/develop/docs/img/demo/ajaxrendering.gif)
 
-![GraphDemo](./docs/img/demo/glyphcontuours.gif)
+![GraphDemo](https://github.com/takigava/GlyphLoader/blob/develop/docs/img/demo/glyphcontuours.gif)
 
 ## Release Notes
 
@@ -137,7 +137,7 @@ System.Diagnostics.Trace.WriteLine(svg.ToString());
 </svg>
 */
 ```
-![Example](./docs/examples/ishindenshin.svg)
+![Example](https://raw.githubusercontent.com/takigava/GlyphLoader/refs/heads/develop/docs/examples/ishindenshin.svg)
 
 The following is a vertical writing sample:
 
@@ -201,7 +201,7 @@ System.Diagnostics.Trace.WriteLine(svg.ToString());
 </svg>
 */
 ```
-![Example](./docs/examples/furinkazan.svg)
+![Example](https://raw.githubusercontent.com/takigava/GlyphLoader/refs/heads/develop/docs/examples/furinkazan.svg)
 
 ## Building
 
