@@ -1,5 +1,5 @@
 ﻿// <copyright file="TableOfNAME.cs" company="WaterTrans">
-// © 2020 WaterTrans and Contributors
+// © 2025 WaterTrans and Contributors
 // </copyright>
 
 using System.Collections.Generic;

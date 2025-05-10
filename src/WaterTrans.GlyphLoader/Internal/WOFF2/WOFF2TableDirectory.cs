@@ -1,5 +1,5 @@
 ﻿// <copyright file="WOFF2TableDirectory.cs" company="WaterTrans">
-// © 2020 WaterTrans and Contributors
+// © 2025 WaterTrans and Contributors
 // </copyright>
 
 namespace WaterTrans.GlyphLoader.Internal.WOFF2

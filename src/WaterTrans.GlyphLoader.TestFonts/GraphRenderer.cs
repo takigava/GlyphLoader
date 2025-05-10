@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using System.Globalization;
+using System.Text;
+using WaterTrans.GlyphLoader.Core.TestFonts;
 using WaterTrans.GlyphLoader.Geometry;
 
 namespace WaterTrans.GlyphLoader.TestFonts
@@ -22,7 +24,7 @@ namespace WaterTrans.GlyphLoader.TestFonts
             var miniLanguage = geometry.Figures.ToString();
 
             var graph = new StringBuilder();
-            var glyphPath = string.Format(GraphResources.StrokePath, miniLanguage, GraphOffsetX, GraphOffsetY + baseline * graphEmSize);
+            var glyphPath = string.Format(CultureInfo.InvariantCulture,GraphResources.StrokePath, miniLanguage, GraphOffsetX, GraphOffsetY + baseline * graphEmSize);
             graph.AppendLine(glyphPath);
 
             // origin point
@@ -86,37 +88,37 @@ namespace WaterTrans.GlyphLoader.TestFonts
                 }
             }
 
-            return string.Format(GraphResources.Grid, graph.ToString());
+            return string.Format(CultureInfo.InvariantCulture, GraphResources.Grid, graph.ToString());
         }
 
         public string GetBlackBox(double x, double y, double width, double height)
         {
-            return string.Format(GraphResources.BlackBox, x + GraphOffsetX, y + GraphOffsetY, width, height);
+            return string.Format(CultureInfo.InvariantCulture, GraphResources.BlackBox, x + GraphOffsetX, y + GraphOffsetY, width, height);
         }
 
         public string GetAdvanceBox(double x, double y, double width, double height)
         {
-            return string.Format(GraphResources.AdvanceBox, x + GraphOffsetX, y + GraphOffsetY, width, height);
+            return string.Format(CultureInfo.InvariantCulture, GraphResources.AdvanceBox, x + GraphOffsetX, y + GraphOffsetY, width, height);
         }
 
         public string GetOriginPoint(double x, double y)
         {
-            return string.Format(GraphResources.OriginPoint, x + GraphOffsetX, y + GraphOffsetY, 0, 0);
+            return string.Format(CultureInfo.InvariantCulture, GraphResources.OriginPoint, x + GraphOffsetX, y + GraphOffsetY, 0, 0);
         }
 
         public string GetBaseline(double y)
         {
-            return string.Format(GraphResources.Baseline, y + GraphOffsetY);
+            return string.Format(CultureInfo.InvariantCulture, GraphResources.Baseline, y + GraphOffsetY);
         }
 
         public string GetCurvePoint(double x, double y, double coodinateX, double coodinateY)
         {
-            return string.Format(GraphResources.CurvePoint, x + GraphOffsetX, y + GraphOffsetY, coodinateX, coodinateY);
+            return string.Format(CultureInfo.InvariantCulture, GraphResources.CurvePoint, x + GraphOffsetX, y + GraphOffsetY, coodinateX, coodinateY);
         }
 
         public string GetControlPoint(double x, double y, double coodinateX, double coodinateY)
         {
-            return string.Format(GraphResources.ControlPoint, x + GraphOffsetX, y + GraphOffsetY, coodinateX, coodinateY);
+            return string.Format(CultureInfo.InvariantCulture, GraphResources.ControlPoint, x + GraphOffsetX, y + GraphOffsetY, coodinateX, coodinateY);
         }
     }
 }

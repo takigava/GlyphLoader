@@ -38,7 +38,7 @@ namespace WaterTrans.GlyphLoader.Demo.Pages
         {
             if (!_typefaces.ContainsKey(font))
             {
-                font = "Roboto-Regular.ttf";
+                font = "Roboto-Regular.ttf"; 
             }
 
             if (string.IsNullOrEmpty(text))

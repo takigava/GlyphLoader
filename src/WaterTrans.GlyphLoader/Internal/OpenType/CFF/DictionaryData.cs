@@ -1,9 +1,10 @@
 ﻿// <copyright file="DictionaryData.cs" company="WaterTrans">
-// © 2020 WaterTrans
+// © 2025 WaterTrans
 // </copyright>
 
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 
 namespace WaterTrans.GlyphLoader.Internal.OpenType.CFF
@@ -65,7 +66,7 @@ namespace WaterTrans.GlyphLoader.Internal.OpenType.CFF
                         advance++;
                     }
                     nibble += ParseNibble(data[index + advance] >> 4);
-                    operand.Push(float.Parse(nibble));
+                    operand.Push(float.Parse(nibble, CultureInfo.InvariantCulture));
                     advance++;
                 }
                 else if (!isPrivate && data[index] >= 0 && data[index] <= 21)
@@ -313,7 +314,7 @@ namespace WaterTrans.GlyphLoader.Internal.OpenType.CFF
                 case 0x0f:
                     break;
                 default:
-                    result += value.ToString("d1");
+                    result += value.ToString("d1", CultureInfo.InvariantCulture);
                     break;
             }
             return result;

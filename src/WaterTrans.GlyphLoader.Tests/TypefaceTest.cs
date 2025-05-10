@@ -2,10 +2,13 @@
 using Moq;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Text;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using WaterTrans.GlyphLoader.Core.TestFonts;
+using WaterTrans.GlyphLoader.Core.Tests;
 using WaterTrans.GlyphLoader.TestFonts;
 
 namespace WaterTrans.GlyphLoader.Tests
@@ -661,7 +664,7 @@ namespace WaterTrans.GlyphLoader.Tests
                 gt.BottomSideBearings[glyphIndex],
                 GraphEmSize);
 
-            return string.Format(TextResources.GlyphComparison, fontFile, glyphIndex, typefaceGraph, wpfGraph);
+            return string.Format(CultureInfo.InvariantCulture, TextResources.GlyphComparison, fontFile, glyphIndex, typefaceGraph, wpfGraph);
         }
 
 
@@ -680,7 +683,7 @@ namespace WaterTrans.GlyphLoader.Tests
             var miniLanguage = geometry.Figures.ToString();
 
             var graph = new StringBuilder();
-            var glyphPath = string.Format(GraphResources.StrokePath, miniLanguage, renderer.GraphOffsetX, renderer.GraphOffsetY + baseline * graphEmSize);
+            var glyphPath = string.Format(CultureInfo.InvariantCulture, GraphResources.StrokePath, miniLanguage, renderer.GraphOffsetX, renderer.GraphOffsetY + baseline * graphEmSize);
             graph.AppendLine(glyphPath);
 
             // origin point
@@ -797,7 +800,7 @@ namespace WaterTrans.GlyphLoader.Tests
                 }
             }
 
-            return string.Format(GraphResources.Grid, graph.ToString());
+            return string.Format(CultureInfo.InvariantCulture, GraphResources.Grid, graph.ToString());
         }
 
         #endregion

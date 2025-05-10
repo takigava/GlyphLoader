@@ -1,5 +1,5 @@
 ﻿// <copyright file="PathSegmentCollection.cs" company="WaterTrans">
-// © 2020 WaterTrans
+// © 2025 WaterTrans
 // </copyright>
 
 using System.Collections.Generic;

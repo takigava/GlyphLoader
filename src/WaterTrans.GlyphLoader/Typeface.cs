@@ -1,5 +1,5 @@
 ﻿// <copyright file="Typeface.cs" company="WaterTrans">
-// © 2020 WaterTrans
+// © 2025 WaterTrans
 // </copyright>
 
 using System;
@@ -10,7 +10,6 @@ using System.Globalization;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
-using Brotli;
 using WaterTrans.GlyphLoader.Geometry;
 using WaterTrans.GlyphLoader.Internal;
 using WaterTrans.GlyphLoader.Internal.AAT;
@@ -528,6 +527,17 @@ namespace WaterTrans.GlyphLoader
         public IDictionary<string, FeatureRecord> GPOSFeatures
         {
             get { return new ReadOnlyDictionary<string, FeatureRecord>(_gposFeatures); }
+        }
+
+        /// <summary>
+        /// Gets the NAME feature list.
+        /// </summary>
+        public IDictionary<ushort[], string> NAMEFeatures
+        {
+            get
+            {
+                return _tableOfNAME.NameRecords.ToDictionary(nameRecord => new[] { nameRecord.PlatformID, nameRecord.EncodingID, nameRecord.LanguageID, nameRecord.NameID }, nameRecord => nameRecord.NameString);
+            }
         }
 
         /// <summary>

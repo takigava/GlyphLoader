@@ -1,5 +1,5 @@
 ﻿// <copyright file="TableOfCMAP.cs" company="WaterTrans">
-// © 2020 WaterTrans
+// © 2025 WaterTrans
 // </copyright>
 
 using System;
@@ -300,6 +300,11 @@ namespace WaterTrans.GlyphLoader.Internal
                 if (record.PlatformID == 0 && record.EncodingID == 0)
                 {
                     sorted.Add(8, record.GlyphMap);
+                    continue;
+                }
+                if (record.PlatformID == 3 && record.EncodingID == 0)
+                {
+                    sorted.Add(9, record.GlyphMap);
                     continue;
                 }
             }

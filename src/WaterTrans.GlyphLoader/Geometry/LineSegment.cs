@@ -1,8 +1,9 @@
 ﻿// <copyright file="LineSegment.cs" company="WaterTrans">
-// © 2020 WaterTrans
+// © 2025 WaterTrans
 // </copyright>
 
 using System;
+using System.Globalization;
 using WaterTrans.GlyphLoader.Internal;
 
 namespace WaterTrans.GlyphLoader.Geometry
@@ -50,7 +51,7 @@ namespace WaterTrans.GlyphLoader.Geometry
         /// <inheritdoc />
         public override string ToString(double x, double y, int roundDigits)
         {
-            return "L" + Math.Round(Point.X + x, roundDigits) + "," + Math.Round(Point.Y + y, roundDigits);
+            return "L" + Math.Round(Point.X + x, roundDigits).ToString(CultureInfo.InvariantCulture) + "," + Math.Round(Point.Y + y, roundDigits).ToString(CultureInfo.InvariantCulture);
         }
     }
 }

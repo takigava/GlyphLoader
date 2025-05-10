@@ -1,5 +1,5 @@
 ﻿// <copyright file="Adjustment.cs" company="WaterTrans">
-// © 2020 WaterTrans
+// © 2025 WaterTrans
 // </copyright>
 
 namespace WaterTrans.GlyphLoader.OpenType

@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("WaterTrans")]
 [assembly: AssemblyProduct("GlyphLoader")]
-[assembly: AssemblyCopyright("© 2020 WaterTrans")]
+[assembly: AssemblyCopyright("© 2025 WaterTrans")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
