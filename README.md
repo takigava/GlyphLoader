@@ -13,9 +13,9 @@ Old original .NET Standart library is placed in https://github.com/watertrans/Gl
 
 ## Demo
 
-![AjaxDemo](https://github.com/takigava/GlyphLoader/blob/develop/docs/img/demo/ajaxrendering.gif)
+![AjaxDemo](https://raw.githubusercontent.com/takigava/GlyphLoader/refs/heads/develop/docs/img/demo/ajaxrendering.gif)
 
-![GraphDemo](https://github.com/takigava/GlyphLoader/blob/develop/docs/img/demo/glyphcontuours.gif)
+![GraphDemo](https://raw.githubusercontent.com/takigava/GlyphLoader/refs/heads/develop/docs/img/demo/glyphcontuours.gif)
 
 ## Release Notes
 
